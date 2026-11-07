@@ -1,0 +1,73 @@
+name: senus_app
+description: SENUS — Sony Ericsson New Update Service. Herramienta de escritorio para instalar y mantener senew en el W580i.
+publish_to: 'none'
+version: 0.9.0+9
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # FFI y libusb — capa USB
+  ffi: ^2.1.0
+
+  # Utilidades
+  path: ^1.9.0
+  archive: ^3.6.0      # para armar/leer el .zip del respaldo
+  crypto: ^3.0.3       # SHA-256 del manifiesto
+  ed25519_edwards: ^0.3.2 # verificar el índice y los manifiestos; Dart puro
+  intl: '>=0.19.0 <0.21.0'
+  file_picker: ^8.0.0  # diálogos de abrir/guardar nativos (Linux/macOS/Windows)
+  path_provider: ^2.1.0 # carpeta Documentos para respaldos
+
+  # Iconos: Material Symbols (fuente variable, empaquetada; sin red)
+  material_symbols_icons: ^4.2960.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # El instalador anycid+trampoline del W580 va DENTRO del .app (sin red, sin
+  # rutas del hogar de nadie). Los copia `tool/empotrar_instalador_w580.py`; el
+  # MANIFIESTO.json fija su sha256 y SENUS lo comprueba antes de tocar nada.
+  assets:
+    - assets/instalador/w580/
+    # Los servicios locales: la letra del teléfono, avisos y el ayudante de dictado.
+    # El sha256 del ayudante se fija en lib/servicios/catalogo_componentes.dart.
+    - assets/servicios/
+    - assets/servicios/macos/
+    # La licencia de SENUS y las de los programas de terceros (Ajustes › Licencias).
+    - assets/licencias/
+    - assets/fuentes/Inter-OFL.txt
+    - assets/fuentes/JetBrainsMono-OFL.txt
+
+  # Fuentes locales (OFL, licencias junto a los .ttf). Se empaquetan en vez de
+  # bajarse en tiempo de ejecución: el sandbox de macOS no deja salir a la red.
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fuentes/Inter-Light.ttf
+          weight: 300
+        - asset: assets/fuentes/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fuentes/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fuentes/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fuentes/Inter-Bold.ttf
+          weight: 700
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fuentes/JetBrainsMono-Regular.ttf
+          weight: 400
+        - asset: assets/fuentes/JetBrainsMono-Medium.ttf
+          weight: 500

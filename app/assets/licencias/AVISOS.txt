@@ -1,0 +1,53 @@
+﻿SENUS — avisos de licencia / license notices
+=============================================
+
+ESPAÑOL
+
+SENUS es software libre bajo la licencia GPL-3.0 (SENUS-GPL-3.0.txt).
+Código fuente: https://github.com/semakers/senus
+
+SENUS es un proyecto nuevo, hecho por la comunidad y sin relación con Sony ni con
+Sony Ericsson. Se usa bajo tu propio riesgo: instalar senew cambia el software de
+tu teléfono.
+
+Componentes de terceros que van dentro de este instalador:
+
+- seftool (https://github.com/farid1991/seftool), licencia MIT (seftool-MIT.txt).
+  SENUS lleva una versión de seftool con cambios para el W580i. Las carpetas
+  seftool\loader y seftool\rest son las que distribuye el proyecto original.
+- libusb 1.0.27 (https://libusb.info), licencia LGPL-2.1 (libusb-LGPL-2.1.txt).
+  Binario oficial sin modificar, enlazado dinámicamente (libusb-1.0.dll); se
+  puede sustituir por otro. Fuente: https://github.com/libusb/libusb/releases/tag/v1.0.27
+- libwdi (wdi-simple.exe, https://github.com/pbatard/libwdi), licencia LGPL-3.0
+  (libwdi-LGPL-3.0.txt, que se lee junto con SENUS-GPL-3.0.txt). Compilado sin
+  cambios desde el commit 30df0c0e051b0132c4b9ebed8c054bc8eb3aaaec; se lanza
+  como un programa aparte y se puede sustituir.
+- Flutter y los paquetes de Dart: sus avisos están dentro de la app
+  (data\flutter_assets\NOTICES.Z) y se ven en SENUS › Ajustes › Licencias.
+- Los paquetes R8BE001_*_GENERIC_*.zip (el «executor» original del teléfono) son
+  de Sony Ericsson y se incluyen solo para que la primera instalación funcione.
+
+ENGLISH
+
+SENUS is free software under the GPL-3.0 license (SENUS-GPL-3.0.txt).
+Source code: https://github.com/semakers/senus
+
+SENUS is a new, community project with no relation to Sony or Sony Ericsson.
+Use it at your own risk: installing senew changes your phone's software.
+
+Third-party components shipped in this installer:
+
+- seftool (https://github.com/farid1991/seftool), MIT license (seftool-MIT.txt).
+  SENUS ships a seftool build with changes for the W580i. The seftool\loader
+  and seftool\rest folders are the ones the original project distributes.
+- libusb 1.0.27 (https://libusb.info), LGPL-2.1 license (libusb-LGPL-2.1.txt).
+  Unmodified official binary, dynamically linked (libusb-1.0.dll); it can be
+  replaced. Source: https://github.com/libusb/libusb/releases/tag/v1.0.27
+- libwdi (wdi-simple.exe, https://github.com/pbatard/libwdi), LGPL-3.0 license
+  (libwdi-LGPL-3.0.txt, read together with SENUS-GPL-3.0.txt). Built unmodified
+  from commit 30df0c0e051b0132c4b9ebed8c054bc8eb3aaaec; it runs as a separate
+  program and can be replaced.
+- Flutter and the Dart packages: their notices are inside the app
+  (data\flutter_assets\NOTICES.Z) and shown in SENUS › Ajustes › Licencias.
+- The R8BE001_*_GENERIC_*.zip packages (the phone's original "executor") belong
+  to Sony Ericsson and are included only so the first installation can work.

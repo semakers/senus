@@ -1,0 +1,4 @@
+libusb-1.0.dll — binario OFICIAL de libusb 1.0.27 (VS2022/MS64/dll), sin modificar.
+Origen: https://github.com/libusb/libusb/releases/download/v1.0.27/libusb-1.0.27.7z
+Licencia: LGPL-2.1 (https://github.com/libusb/libusb/blob/master/COPYING). Se enlaza
+dinámicamente (la DLL va junto al .exe y se puede sustituir por otra).

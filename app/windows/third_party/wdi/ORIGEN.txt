@@ -1,0 +1,9 @@
+wdi-simple.exe — libwdi (instalador de drivers USB del proyecto libusb), compilado de fuente
+con MinGW-w64 en la PC de Windows el 2026-10-31, siguiendo el CI oficial de libwdi
+(.github/workflows/mingw.yml): --disable-shared --disable-32bit, WinUSB con los
+redistribuibles del WDK 8.0 (wdfver 1011).
+Fuente: https://github.com/pbatard/libwdi  (commit 30df0c0e051b0132c4b9ebed8c054bc8eb3aaaec)
+Licencia: LGPL-3.0 (COPYING-LGPL). SENUS lo lanza como proceso aparte
+(herramientas\wdi-simple.exe junto a senus_app.exe); se puede sustituir por otro
+build de libwdi o por el que lleve la persona.
+Uso desde SENUS: wdi-simple.exe --name "SEMC USB Flash" --vid 0x0fce --pid 0xadde --type 0 --silent

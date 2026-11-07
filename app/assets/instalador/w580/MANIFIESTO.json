@@ -1,0 +1,71 @@
+{
+  "formato": 1,
+  "generado_utc": "2026-11-07T02:06:01Z",
+  "aparato": "W580",
+  "flujo": "anycid + trampoline + BL installer (1209:0003)",
+  "verificado_en_silicio": {
+    "paquete": "R8BE001_CXC1123362_GENERIC_LA",
+    "cid": 52,
+    "fecha": "2026-10-30"
+  },
+  "ficheros": {
+    "DB2020.zip": {
+      "sha256": "d01c8071d33c82fae91bb73e68ea15c6ca77ebe1b13a525bf09f3312a90b2670",
+      "bytes": 12488,
+      "origen": "~/dev/seftool-senew/anycid/DB2020.zip",
+      "db2020_bin_bytes": 12580
+    },
+    "R8BE001_1201-7587_GENERIC_VI.zip": {
+      "sha256": "0a81f5f81643b7b24c402808f269e8519be5ba7d6a52239329a2943babd9f5f2",
+      "bytes": 2240,
+      "origen": "~/dev/seftool-senew/anycid/R8BE001_1201-7587_GENERIC_VI.zip",
+      "executor_b_bytes": 3692,
+      "executor_b_sha256": "abfb0a1f60721f6ca8f06d1fce9486e5ee695288ceb887fcfe6095852ad6395b"
+    },
+    "R8BE001_CXC1123326_GENERIC_LY.zip": {
+      "sha256": "d65062e81e88deadad5326888ffc252e5518727e4dcb2cf76901647290c4fbc1",
+      "bytes": 2240,
+      "origen": "~/dev/seftool-senew/anycid/R8BE001_CXC1123326_GENERIC_LY.zip",
+      "executor_b_bytes": 3692,
+      "executor_b_sha256": "1556c4227397cf66b030ff02d819648e7461c0cd3943343347310aafa003865b"
+    },
+    "R8BE001_CXC1123362_GENERIC_LA.zip": {
+      "sha256": "97cb1e6a03bd73d16542cae0edb832d70ffa29ef5ff38de429eed623333e0709",
+      "bytes": 2240,
+      "origen": "~/dev/seftool-senew/anycid/R8BE001_CXC1123362_GENERIC_LA.zip",
+      "executor_b_bytes": 3692,
+      "executor_b_sha256": "e1750845cc2dca75c65ae67f6e1b49f3b2b11c7baa0f6addc57e108e45ce942d"
+    },
+    "R8BE001_CXC1250374_GENERIC_TH.zip": {
+      "sha256": "9fb2122db6266c1d12876118603858d91037ef424c423a99fad71fbd6f98455c",
+      "bytes": 2240,
+      "origen": "~/dev/seftool-senew/anycid/R8BE001_CXC1250374_GENERIC_TH.zip",
+      "executor_b_bytes": 3692,
+      "executor_b_sha256": "ee7e2000605826682927c3e0f73dafe479287fa5cfde8c6676ad33d014994e5e"
+    },
+    "R8BE001_CXC1250446_GENERIC_FY.zip": {
+      "sha256": "72fc0248d7ca95c84e79481efaac3aa0d040db9245300213f01c94da1f7cd5e2",
+      "bytes": 2240,
+      "origen": "~/dev/seftool-senew/anycid/R8BE001_CXC1250446_GENERIC_FY.zip",
+      "executor_b_bytes": 3692,
+      "executor_b_sha256": "f7d9e838c3509e3c6f86879ade614e215e6f881535e5e63143b688d56c655e1f"
+    },
+    "R8BE001_CXC1250640_GENERIC_AI.zip": {
+      "sha256": "5abc5a827a366b51d2e459638b03bc656d082a824bf8437d6f96ebcc7140986e",
+      "bytes": 2240,
+      "origen": "~/dev/seftool-senew/anycid/R8BE001_CXC1250640_GENERIC_AI.zip",
+      "executor_b_bytes": 3692,
+      "executor_b_sha256": "fa0918042c050031da96199c729fcef9dfbe8255533cde4a8f93125cb099928b"
+    },
+    "sistema_44180000.bin": {
+      "sha256": "5d90eeba3f2dbf50d3f270bfb94d40c34de76eb5bc32e7afdb856e0d3ce75c66",
+      "bytes": 1966852,
+      "origen": "~/dev/w580/sistema/build/aparato_0303/sistema_44180000.bin"
+    },
+    "bl.bin": {
+      "sha256": "74150a397b0a347dde423488f1ebcefbceb15138e000924a74c2ece8df32019f",
+      "bytes": 5912,
+      "origen": "~/dev/w580/sistema/build/bl/bl.bin"
+    }
+  }
+}
